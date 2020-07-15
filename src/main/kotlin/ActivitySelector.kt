@@ -5,10 +5,8 @@ fun main() {
 fun activitySelector(activitiesList: List<String>): String = activitiesList.random()
 
 val activities = listOf(
-    "The Bastille Crack",
     "Hagan's Wall",
-    "Upper Y Traverse",
-    "Lust"
+    "Upper Y Traverse"
 )
 
 fun rollForEvent() {

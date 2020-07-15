@@ -1,5 +1,10 @@
 plugins {
     kotlin("jvm") version "1.3.72"
+    application
+}
+
+application {
+    mainClassName = "ActivitySelectorKt"
 }
 
 group = "org.example"
