@@ -66,7 +66,7 @@ class CalendarStart {
             .setSummary("Time to climb $activity")
             .setLocation(currentUrl)
             .setDescription("Look at the time... it's Send O' Clock!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-        val startDate = LocalDateTime.now().plusDays(3).toLocalDate()
+        val startDate = LocalDateTime.now().plusDays(daysAway).toLocalDate()
 
         val startDateTime = DateTime("${startDate}T17:30:00-06:00")
         val start = EventDateTime().setDateTime(startDateTime).setTimeZone(timeZone)

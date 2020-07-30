@@ -9,7 +9,7 @@ import java.time.Duration
 class AutomateWebsite {
     fun openWebsite(activity: String) {
         val driver = ChromeDriver()
-        driver.get("https://mountainproject.com")
+        driver.get(website)
         driver.findElementByCssSelector("input[placeholder='Search routes, forums, etc']").also {
             it.sendKeys(activity)
             it.sendKeys(Keys.RETURN)
